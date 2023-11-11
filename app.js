@@ -10,3 +10,12 @@ toggleBtn.onclick = function () {
     ? 'fa-solid fa-xmark'
     : 'fa-solid fa-bars'
 }
+
+
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach((faq) => {
+    faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+    });
+});
