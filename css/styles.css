@@ -165,7 +165,7 @@ svg {
 
 #countdown {
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     margin-bottom:100px ;
     margin-top: 3rem;
 }
@@ -212,11 +212,27 @@ svg {
     .dropdown_menu{
         display: block;
     }
+    #countdown {
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(150px, 1fr)
+        );
+        gap: 32px;
+    }
 }
 
 @media(max-width: 576px) {
     .dropdown_menu {
         left: 2rem;
         width: unset;
+    }
+    #countdown {
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(150px, 1fr)
+        );
+        gap: 32px;
     }
 }
