@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 body {
     height: 100vh;
-    background-color: white;
+    
+    background-image: url(/assets/background-boat.jpg);
 }
 
 li {
@@ -28,6 +29,12 @@ a:hover {
 header{
     position: relative;
     padding: 0 2rem;
+}
+
+.navbar img {
+    width: 4rem; 
+    height: 3rem;
+    margin-left: 1rem;
 }
 
 .navbar {
@@ -70,8 +77,7 @@ header{
     width: 300px;
     height: 0;
     background: lightgray ;
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
+    border-radius: 1px;
     overflow: hidden;
     transition: heigth 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -85,7 +91,7 @@ header{
 
 .dropdown_menu.open {
     height: 23rem;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 
