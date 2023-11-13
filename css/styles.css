@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 body {
     height: 100vh;
-    background: gainsboro;
+    background: #fff;
 }
 
 li {
@@ -21,7 +21,7 @@ a {
 }
 
 a:hover {
-    color: orange;
+    color:#73C3F4 ;
 }
 
 /* HEADER */
@@ -43,7 +43,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #e7e7e7;
 }
 
 .navbar .logo a {
@@ -74,7 +73,6 @@ header{
     top: 60px;
     width: 300px;
     height: 0;
-    background: #e7e7e7;
     border-radius: 1px;
     overflow: hidden;
     transition: heigth 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -88,18 +86,83 @@ header{
 }
 
 .dropdown_menu.open {
-    height: 18rem;
-    margin-top: 0px;
+    height: 17rem;
+    margin-top: -1px;
+    background-color: #fff;
 }
+
+
+.cta {
+    display: inline-block;
+    text-decoration: none;
+    background-image: linear-gradient(45deg, rgb(154, 226, 255) 0%, #fad0c4 99%, rgb(196, 217, 250) 100%);
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+
+/* SERVICES */
+
+.card-title {
+    margin-top: 30px;
+    font-size: 60px;
+    text-align: center;
+}
+
+
+.card-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 120px;
+    margin-bottom: 15px;
+}
+
+.card {
+    width: 30%;
+    text-align: center;
+    height: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+    transform: scale(1);
+    transition: transform 0.6s;
+}
+
+.card:hover {
+    box-shadow:0 0 6px 0 rgba(0, 0, 0, .5); ;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.cards-services {
+    background-image: url(/assets/frame-services.png);
+    min-height: 100vh;
+}
+
+.card i {
+    margin: 30px 0 20px 0;
+    color: #73C3F4 ;
+    font-size: 50px;
+}
+
+.card p {
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
+
 
 /* FAQs */
 section {
-    min-height: 25vh;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(/assets/frame-4.png);
 }
 
 .title {
@@ -110,7 +173,7 @@ section {
 .faq {
     max-width: 700px;
     margin-top: 2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     border-bottom: 2px solid #fff;
     cursor: pointer;
 }
@@ -122,7 +185,7 @@ section {
 }
 
 .question h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .answer {
@@ -134,7 +197,7 @@ section {
 .answer p {
     padding-top: 1rem;
     line-height: 1.6;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .faq.active .answer {
@@ -161,7 +224,40 @@ svg {
     }
 }
 
+/*HELP*/
+
+.help-info {
+    background: #fff;
+    min-height: 100vh;
+}
+
+.help-info img {
+    margin-top: 97px;
+}
+
+.text-content {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.text-content2 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
+
 /*Countdown */
+
+.count {
+    /*background: #73C3F4;*/
+    background-image: url(/assets/Frame-countdown.png);
+    min-height: 100vh;
+}
 
 #countdown {
     display: flex;
@@ -170,7 +266,7 @@ svg {
     margin-top: 3rem;
 }
 .simply-section {
-    background: #e7e7e7;
+    background: #fff;
     width: 180px;
     height: 180px;
     margin: 0 20px;
@@ -193,10 +289,66 @@ svg {
 
 .main-title {
     font-size: 3rem;
-    margin: 1rem 0 1rem;
+    margin: 5rem 0 1rem;
 }
 
 
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer {
+    width: 100%;
+}
+
+.footer .group-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.footer .group-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .group-1 .box figure img {
+    width: 250px;
+}
+
+.footer .group-1 .box h2 {
+    color: #4C5051;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.footer .group-1 .box p {
+    color: #4C5051;
+    margin-bottom: 10px;
+}
+
+.footer .group-1 .social-media a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    text-align: center;
+}
 
 
 /* RESPONSIVE */
@@ -224,8 +376,8 @@ svg {
 
 @media(max-width: 576px) {
     .dropdown_menu {
-        left: 2rem;
-        width: unset;
+        left: 0;
+        width: 100%;
     }
     #countdown {
         display: grid;
@@ -234,5 +386,20 @@ svg {
             minmax(150px, 1fr)
         );
         gap: 32px;
+    }
+    .cta {
+        margin-top: 3px;
+    }
+}
+
+@media(max-width: 800px) {
+    .footer .group-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+    .card {
+        width: 60%;
     }
 }

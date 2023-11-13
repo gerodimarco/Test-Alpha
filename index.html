@@ -12,7 +12,7 @@
         referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
     <title>Company Web</title>
 </head>
 <body>
@@ -20,8 +20,8 @@
         <img src="assets/logo-software.webp" alt="Logo">
         <ul class="menu-list">
             <li><a href="about-us">About Us</a></li>
-            <li><a href="book-online">Book Online</a></li>
-            <li><a href="locations">Locations</a></li>
+            <li><a href="book-online">Services</a></li>
+            <li><a href="locations">Products</a></li>
             <li><a href="blog">Blog</a></li>
             <li><a href="shop">Shop</a></li>
             <li><a href="subscription">Subscription</a></li>
@@ -33,22 +33,54 @@
 
     <div class="dropdown_menu open">
             <li><a href="about-us">About Us</a></li>
-            <li><a href="book-online">Book Online</a></li>
-            <li><a href="locations">Locations</a></li>
+            <li><a href="book-online">Services</a></li>
+            <li><a href="locations">Products</a></li>
             <li><a href="blog">Blog</a></li>
             <li><a href="shop">Shop</a></li>
             <li><a href="subscription">Subscription</a></li>
     </div>
     
-    <!-- Countdown -->
     <section class="count">
         <h1 class="main-title">COUNTDOWN FOR BLACK FRIDAY</h1>
+        <h3>Don't miss on our exclusive offers and 15% in our software plans</h3>
         <div id="countdown">
-        
         </div>
     </section>
 
-    <!-- FAQ -->
+
+
+    <section class="cards-services">
+        <h2 class="card-title">Our services</h2>
+        <div class="card-content">
+            <article class="card">
+                <i class="fa-solid fa-database"></i>
+                <h3>Title Card</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="" class="cta">Learn more</a>
+            </article>
+            <article class="card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Title Card</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="" class="cta">Learn more</a>
+            </article>
+            <article class="card">
+                <i class="fa-solid fa-layer-group"></i>
+                <h3>Title Card</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="" class="cta">Learn more</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="help-info">
+        <h2 class="card-title">We can help you</h2>
+        <p class="text-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, sapiente iure. Itaque fuga eius aliquid autem rerum eaque voluptate repudiandae quisquam expedita, nulla esse ullam impedit non dolore suscipit nostrum perspiciatis saepe labore facere? Expedita alias rem officiis aut adipisci? Cupiditate dicta deleniti reiciendis, praesentium odit quas mollitia libero sit accusamus quos magni animi quia veniam vero culpa. Fugiat, molestias eum. Magnam voluptates inventore rem incidunt quo distinctio, molestiae dolor similique molestias voluptate? Doloremque, debitis eligendi delectus quod dignissimos odio voluptate inventore laboriosam laborum vero ullam blanditiis dolorem, dolor, earum vel ratione porro!</p>
+        <p class="text-content2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, sapiente iure. Itaque fuga eius aliquid autem rerum eaque voluptate repudiandae quisquam expedita, nulla esse ullam impedit non dolore suscipit nostrum perspiciatis saepe labore facere?</p>
+        <a href="" class="cta">Contact Us</a>
+        <img src="/assets/help-section.png" alt="help">
+    </section>
+
     <section>
         <h2 class="title">FAQs</h2>
 
@@ -99,10 +131,49 @@
                 Mauris laoreet ex diam, sed aliquet orci tempus sed.</p>
             </div>
         </div>
+        <div class="faq">
+            <div class="question">
+                <h3>¿Do you develop mobile apps?</h3>
+
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id commodo magna. Fusce euismod massa at risus interdum luctus.
+                Praesent in mi quis nisl consectetur interdum. Cras a mauris dapibus, egestas augue non, tempor tortor. 
+                Mauris laoreet ex diam, sed aliquet orci tempus sed.</p>
+            </div>
+        </div>
     </section>
 
 
 
+    <footer class="footer">
+        <div class="group-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="/assets/logo-software.webp" alt="Logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, molestias?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, molestias?</p>
+            </div>
+            <div class="box">
+                <h2>Social Media</h2>
+                <div class="social-media">
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-instagram"></a>
+                    <a href="#" class="fa-brands fa-twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="/js/app.js"></script>
     <script src="/js/simplyCountdown.min.js"></script>
