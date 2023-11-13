@@ -24,7 +24,7 @@ a:hover {
     color:#73C3F4 ;
 }
 
-/* HEADER */
+
 header{
     position: relative;
     padding: 0 2rem;
@@ -65,7 +65,7 @@ header{
     padding-right: 1rem;
 }
 
-/*DROPDOWN MENU */
+
 .dropdown_menu {
     display: none;
     position: absolute;
@@ -102,7 +102,7 @@ header{
 }
 
 
-/* SERVICES */
+
 
 .card-title {
     margin-top: 30px;
@@ -155,7 +155,7 @@ header{
 
 
 
-/* FAQs */
+
 section {
     width: 100%;
     margin: 0 auto;
@@ -224,7 +224,7 @@ svg {
     }
 }
 
-/*HELP*/
+
 
 .help-info {
     background: #fff;
@@ -251,7 +251,7 @@ svg {
 
 
 
-/*Countdown */
+
 
 .count {
     /*background: #73C3F4;*/
@@ -302,7 +302,7 @@ svg {
 
 
 
-/* Footer */
+
 .footer {
     width: 100%;
 }
@@ -351,7 +351,7 @@ svg {
 }
 
 
-/* RESPONSIVE */
+
 @media(max-width: 992px) {
     .navbar .menu-list {
         display: none;
